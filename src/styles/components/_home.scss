@@ -1,0 +1,214 @@
+.Home {
+  margin: 0;
+}
+
+.Hero {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  position: relative;
+
+  video {
+    position: absolute;
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+  }
+
+  .overlay {
+    align-items: center;
+    background-color: rgba($b, 0.6);
+    color: $w;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    text-align: center;
+    width: fit-content;
+    z-index: 1;
+  }
+
+  h1 {
+    align-items: center;
+    color: $w;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+
+    &:after {
+      background-color: $primary;
+      border-radius: 12px;
+      content: "";
+      display: block;
+      margin-top: 1rem;
+      margin-bottom: 1.2rem;
+      height: 8px;
+      width: 190px;
+    }
+
+    @media (min-width: $laptop) {
+      font-size: 7.5rem;
+      line-height: 7.5rem;
+    }
+  }
+
+  p {
+    font-size: 22px;
+    margin-bottom: 30px;
+  }
+
+  @media (min-width: $laptop) {
+    .overlay {
+      align-items: baseline;
+      left: 10%;
+      max-height: calc(100vh - 16rem);
+      padding: 8rem 10rem 8rem 8rem;
+      position: absolute;
+      text-align: left;
+      top: calc(50% - 715px / 2);
+
+      h1 {
+        align-items: baseline;
+        max-width: 600px;
+      }
+
+      p {
+        font-size: 36px;
+      }
+
+      .btn {
+        font-size: 1.6rem;
+      }
+    }
+  }
+}
+
+.home-services {
+  color: var(--fg);
+  padding: 2rem 0;
+  text-align: center;
+
+  h2 {
+    padding: 4rem 0 3rem;
+    margin: 0;
+  }
+
+  .box {
+    .icon {
+      margin-bottom: 20px;
+    }
+
+    .description {
+      display: none;
+    }
+  }
+
+  @media (min-width: $tablet) {
+    padding: 6rem 0;
+
+    .box .description {
+      display: block;
+    }
+  }
+
+  .services-grid {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: clamp(280px, 60%, 320px);
+    justify-content: center;
+    padding-bottom: 4rem;
+
+    @media (min-width: $mobileL) {
+      grid-template-columns: repeat((1, min(320px, 80%)));
+    }
+
+    @media (min-width: $laptop) {
+      grid-template-columns: repeat(3, min(320px, 80%));
+    }
+  }
+
+  .box {
+    border: 2px solid rgba($grey, 0.3);
+    border-radius: 16px;
+    padding: 1.5rem;
+    transition: box-shadow 0.2s ease-in-out;
+    text-align: center;
+
+    &:hover {
+      // box-shadow: 1px 2px 10px -8px;
+      // box-shadow: 0 20px 40px;
+      box-shadow: 1px 2px 10px -4px;
+      cursor: pointer;
+
+      .icon {
+        color: $secondary;
+      }
+    }
+  }
+
+  .icon {
+    color: $primary;
+    font-size: 82px;
+    padding-top: 28px;
+    transition: color 0.2s ease-in-out;
+  }
+}
+
+.home-intro {
+  .layout {
+    display: flex;
+    flex-direction: column;
+
+    .left-block {
+      background-color: $primary;
+      color: $b;
+      padding: 4rem 1rem;
+      width: calc(100% - 2rem);
+
+      p {
+        line-height: 1.8rem;
+      }
+
+      @media (min-width: $mobileL) {
+        padding: 6rem 3rem;
+        width: calc(100% - 6rem);
+      }
+    }
+
+    .right-block {
+      position: relative;
+      width: 100%;
+
+      img {
+        height: 100%;
+        object-fit: cover;
+        width: 100%;
+      }
+    }
+
+    @media (min-width: $laptopM) {
+      flex-direction: row;
+
+      .left-block {
+        padding: 15rem 10rem;
+        width: calc(50% - 20rem);
+      }
+
+      .right-block {
+        width: 50%;
+
+        &::after {
+          background-color: rgba($primary, 0.169);
+          clip-path: polygon(100% 0, 100% 100%, 0 100%);
+          content: "";
+          height: 50%;
+          bottom: 0;
+          left: 0;
+          position: absolute;
+          width: 100%;
+          z-index: 100;
+        }
+      }
+    }
+  }
+}
