@@ -13,7 +13,7 @@ const page: React.FC<pageProps> = () => {
 
         <div className="info-wrapper">
           <div className="block">
-            <h4>Our Address</h4>
+            <h4>Work Locations</h4>
             <p>Whitewater, Wisconsin</p>
             <p>Watertown, Wisconsin</p>
           </div>
@@ -42,12 +42,11 @@ const page: React.FC<pageProps> = () => {
                 <div className="cover whitewater"></div>
               </div>
             </div>
-
-            <div className="slide slide2">
+            {/* <div className="slide slide2">
               <div className="content">
                 <h3>Whitewater, WI</h3>
               </div>
-            </div>
+            </div> */}
           </div>
           <div className="card">
             <div className="slide slide1">
@@ -55,12 +54,11 @@ const page: React.FC<pageProps> = () => {
                 <div className="cover watertown"></div>
               </div>
             </div>
-
-            <div className="slide slide2">
+            {/* <div className="slide slide2">
               <div className="content">
                 <h3>Watertown, WI</h3>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

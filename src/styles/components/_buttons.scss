@@ -1,7 +1,7 @@
 .btn {
   display: block;
   font-size: 1.2rem !important;
-  padding: 22px 36px;
+  padding: 2rem 3rem;
   transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
   text-decoration: none;
   width: fit-content;
@@ -14,9 +14,9 @@
   color: $w !important;
   font-size: 1.2rem !important;
   position: relative;
-  transition: 0.3s ease-in-out color;
+  transition: 0.2s ease-in color;
   z-index: 1;
-  
+
   &::before {
     background-color: $secondary;
     content: "";

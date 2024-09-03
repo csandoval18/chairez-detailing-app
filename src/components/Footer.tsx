@@ -2,20 +2,26 @@ import React from "react"
 import { BiCopyright } from "react-icons/bi"
 import { FaFacebookSquare } from "react-icons/fa"
 import { GrInstagram } from "react-icons/gr"
+import { Link } from "react-scroll"
 
 interface FooterProps {}
 
 const Footer: React.FC<FooterProps> = () => {
+
   return (
     <footer className="Footer container">
       <div className="top-footer">
-        <img
-          src="/logo-w.webp"
-          alt=""
-          // width={200}
-          // height={120}
-          className="logo"
-        ></img>
+        <Link
+          href="/"
+          smooth={true}
+          to="Hero"
+        >
+          <img
+            src="/logo-w.webp"
+            alt=""
+            className="logo"
+          ></img>
+        </Link>
         <div className="block">
           <h5>Contact</h5>
           <p>

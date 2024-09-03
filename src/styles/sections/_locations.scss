@@ -17,6 +17,10 @@
       flex-direction: row;
     }
   }
+  
+  .block p {
+    font-size: 14px;
+  }
 }
 
 .locations-wrapper {
@@ -53,17 +57,17 @@
       min-width: 500px;
     }
 
-    &:hover {
-      cursor: pointer;
+    // &:hover {
+    // cursor: pointer;
 
-      .slide.slide1 {
-        transform: translateY(-100px);
-      }
+    // .slide.slide1 {
+    //   transform: translateY(-100px);
+    // }
 
-      .slide.slide2 {
-        transform: translateY(-100px);
-      }
-    }
+    // .slide.slide2 {
+    //   transform: translateY(-100px);
+    // }
+    // }
 
     .cover {
       align-items: center;

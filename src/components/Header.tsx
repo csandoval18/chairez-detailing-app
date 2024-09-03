@@ -29,26 +29,32 @@ const Header: React.FC<HeaderProps> = () => {
           <li>
             <Link
               smooth={true}
-              to="Skills"
+              to="Services"
               offset={-55}
               onClick={() => setOpenMenu(false)}
-            ></Link>
+            >
+              Services
+            </Link>
           </li>
           <li>
             <Link
               smooth={true}
-              to="Skills"
+              to="Locations"
               offset={-55}
               onClick={() => setOpenMenu(false)}
-            ></Link>
+            >
+              Locations
+            </Link>
           </li>
           <li>
             <Link
               smooth={true}
-              to="Skills"
+              to="About"
               offset={-55}
               onClick={() => setOpenMenu(false)}
-            ></Link>
+            >
+              About
+            </Link>
           </li>
           <li>
             <Link

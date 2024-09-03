@@ -31,15 +31,18 @@
       }
 
       .details {
-        list-style: none;
+        list-style: square;
         padding: 0;
+        text-align: start;
 
         li {
+          color: $b;
           margin-bottom: 0.5rem;
         }
       }
 
       span {
+        color: $b;
         font-size: 3rem;
         font-weight: 800;
         margin-bottom: 1rem;

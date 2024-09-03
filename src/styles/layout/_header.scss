@@ -11,6 +11,10 @@
   top: 0;
   z-index: 1000;
 
+  .logo {
+    caret-color: transparent;
+  }
+
   &.container {
     padding-right: 1rem;
     padding-left: 1rem;
@@ -53,6 +57,7 @@
 
   li a {
     cursor: pointer;
+    caret-color: transparent;
   }
 
   li:first-child a {
