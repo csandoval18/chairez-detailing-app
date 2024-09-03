@@ -51,6 +51,10 @@
   top: 0;
   width: 100%;
 
+  li a {
+    cursor: pointer;
+  }
+
   li:first-child a {
     border-top: 1px solid rgba($grey, 0.5);
   }
@@ -60,7 +64,7 @@
     color: $w !important;
     display: block;
     font-size: 16px;
-    font-weight: 200;
+    font-weight: 400;
     padding: 2.5rem 0;
     transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 

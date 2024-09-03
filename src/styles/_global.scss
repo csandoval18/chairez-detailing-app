@@ -127,23 +127,40 @@ h5 {
 .btn {
   display: block;
   font-size: 1.2rem !important;
-  padding: 12px 22px;
+  padding: 18px 22px;
   transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
   text-decoration: none;
   width: fit-content;
 }
 
 .btn-primary {
-  background-color: $secondary;
-  border-radius: 14px;
-  border: none;
+  background-color: transparent;
+  // border: none;
+  border: 2px solid $b;
   box-shadow: 1px 1px 5px -4px rgb(0, 0, 0);
   color: $w !important;
   font-size: 1.2rem !important;
+  position: relative;
+  transition: 0.3s ease-in-out width;
+
+  &::after {
+    background-color: $primary;
+    content: "";
+    display: block;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 0;
+  }
 
   &:hover {
-    background-color: $primary;
     color: $b !important;
+
+    &::after {
+      width: 100%;
+      z-index: -1;
+    }
   }
 }
 
