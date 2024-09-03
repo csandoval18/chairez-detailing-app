@@ -1,0 +1,194 @@
+@font-face {
+  font-family: "Samsung Sharp Sans Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Samsung Sharp Sans Regular"),
+    url("/fonts/samsung-sharp-sans-cufonfonts-webfont/samsungsharpsans.woff")
+      format("woff");
+}
+
+@font-face {
+  font-family: "Samsung Sharp Sans Medium";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Samsung Sharp Sans Medium"),
+    url("/fonts/samsung-sharp-sans-cufonfonts-webfont/samsungsharpsans-medium.woff")
+      format("woff");
+}
+
+@font-face {
+  font-family: "Samsung Sharp Sans Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Samsung Sharp Sans Bold"),
+    url("/fonts/samsung-sharp-sans-cufonfonts-webfont/samsungsharpsans-bold.woff")
+      format("woff");
+}
+
+@font-face {
+  font-family: "GladioraDemo";
+  src: url("/fonts/gladiora-font/GladioraDemoBlack-7BRBD.ttf")
+      format("truetype"),
+    url("/fonts/gladiora-font/GladioraDemoBlackItalic-rgwgK.ttf")
+      format("truetype"),
+    url("/fonts/gladiora-font/GladiorademoExtralight-AL7Lm.otf")
+      format("opentype"),
+    url("/fonts/gladiora-font/GladioraDemoBold-axox9.ttf") format("truetype"),
+    url("/fonts/gladiora-font/GladioraDemoBoldItalic-L3W34.ttf")
+      format("truetype"),
+    url("/fonts/gladiora-font/GladiorademoExtralightitalic-6Y1Yv.otf")
+      format("opentype"),
+    url("/fonts/gladiora-font/GladiorademoThinitalic-mLrLv.ttf")
+      format("truetype"),
+    url("/fonts/gladiora-font/GladiorademoMedium-lgYgq.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "AhganiryaFont";
+  src: url("/fonts/ahganirya-font/AhganiryaPersonalUse-Yznaj.ttf")
+    format("truetype");
+}
+
+@font-face {
+  font-family: "Grotley Regular";
+  src: url("/fonts/grotley-font/GrotleyRegular-mLEWv.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Grotley Italic";
+  src: url("/fonts/grotley-font/GrotleyItalic-7BD9D.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Mangolia";
+  src: url("/fonts/mangolia-font/Mangolia-2vvjw.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Misegar";
+  src: url("/fonts/misegar-font/MisegarBlack-K7Kjl.otf") format("opentype"),
+    url("/fonts/misegar-font/MisegarBlackitalic-L32oE.otf") format("opentype"),
+    url("/fonts/misegar-font/MisegarBold-X30nZ.otf") format("opentype"),
+    url("/fonts/misegar-font/MisegarBolditalic-gx7Pp.otf") format("opentype"),
+    url("/fonts/misegar-font/MisegarExtrablack-eZvmn.otf") format("opentype"),
+    url("/fonts/misegar-font/MisegarExtrablackitalic-Wy4lO.otf")
+      format("opentype"),
+    url("/fonts/misegar-font/MisegarExtrabold-mLg02.otf") format("opentype"),
+    url("/fonts/misegar-font/MisegarExtrabolditalic-EaR78.otf")
+      format("opentype"),
+    url("/fonts/misegar-font/MisegarExtralight-4B2JW.otf") format("opentype"),
+    url("/fonts/misegar-font/MisegarExtralightitalic-axr2g.otf")
+      format("opentype"),
+    url("/fonts/misegar-font/MisegarItalic-7B7zB.otf") format("opentype"),
+    url("/fonts/misegar-font/MisegarLightitalic-w18Dw.otf") format("opentype"),
+    url("/fonts/misegar-font/MisegarLight-OV7ep.otf") format("opentype"),
+    url("/fonts/misegar-font/MisegarMedium-0WYJG.otf") format("opentype"),
+    url("/fonts/misegar-font/MisegarMediumitalic-d927x.otf") format("opentype"),
+    url("/fonts/misegar-font/MisegarRegular-2OMwe.otf") format("opentype"),
+    url("/fonts/misegar-font/MisegarSemibold-vmBo4.otf") format("opentype"),
+    url("/fonts/misegar-font/MisegarSemibolditalic-MVvjn.otf")
+      format("opentype"),
+    url("/fonts/misegar-font/MisegarThin-PKmWZ.otf") format("opentype"),
+    url("/fonts/misegar-font/MisegarThinitalic-ow4Wo.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "RoleModelFont";
+  src: url("/fonts/role-model-font/RoleModelPersonalUseRegular-8MooA.otf")
+    format("opentype");
+}
+
+@font-face {
+  font-family: "Archimoto Font Black";
+  src: url("/fonts/archimoto-font/Demoarchimotov01Black-8MD5g.otf")
+    format("opentype");
+}
+
+@font-face {
+  font-family: "Archimoto Font Black Italic";
+  src: url("/fonts/archimoto-font/Demoarchimotov01Blackitalic-Yz9rO.otf")
+    format("opentype");
+}
+
+@font-face {
+  font-family: "Archimoto Font Medium";
+  src: url("/fonts/archimoto-font/Demoarchimotov01Medium-rg1Ky.otf")
+    format("opentype");
+}
+
+@font-face {
+  font-family: "Archimoto Font Medium Italic";
+  src: url("/fonts/archimoto-font/Demoarchimotov01Mediumitalic-MVqXJ.otf")
+    format("opentype");
+}
+
+@font-face {
+  font-family: "Archimoto Font Thin";
+  src: url("/fonts/archimoto-font/Demoarchimotov01Thin-K7DPy.otf")
+    format("opentype");
+}
+
+@font-face {
+  font-family: "Archimoto Font Thin Italic";
+  src: url("/fonts/archimoto-font/Demoarchimotov01Thinitalic-2Oz5d.otf")
+    format("opentype");
+}
+
+@font-face {
+  font-family: "Beautica";
+  src: url("/fonts/beautica/Beautica.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Bresley";
+  src: url("/fonts/bresley/Bresley.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Cellofy Black";
+  src: url("/fonts/cellofy-font/CellofyBlack-vmBrA.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Cellofy Black Expandead";
+  src: url("/fonts/cellofy-font/CellofyBlackexpanded-x3YKr.otf")
+    format("opentype");
+}
+
+@font-face {
+  font-family: "Mellion Black";
+  src: url("/fonts/melion-font/MelionBlack-DO5O0.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Notted";
+  src: url("/fonts/notted/Notted.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Playball";
+  src: url("/fonts/playball/Playball-Regular.ttf") format("truetype");
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Samsung Sharp Sans Bold" !important;
+}
+
+a,
+p,
+div,
+span,
+li,
+ul {
+  font-family: "Samsung Sharp Sans Regular";
+  color: $foreground;
+}
+
+p {
+  font-size: 1rem;
+}

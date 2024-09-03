@@ -1,0 +1,52 @@
+.btn {
+  display: block;
+  font-size: 1.2rem !important;
+  padding: 22px 36px;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  text-decoration: none;
+  width: fit-content;
+}
+
+.btn-primary {
+  background-color: transparent;
+  border: none;
+  box-shadow: 1px 1px 5px -4px rgb(0, 0, 0);
+  color: $w !important;
+  font-size: 1.2rem !important;
+  position: relative;
+  transition: 0.3s ease-in-out color;
+  z-index: 1;
+  
+  &::before {
+    background-color: $secondary;
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+  }
+
+  &::after {
+    background-color: $primary;
+    content: "";
+    display: block;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    transition: 0.3s ease-in-out width;
+    width: 0;
+    z-index: -2;
+  }
+
+  &:hover {
+    color: $b !important;
+
+    &::after {
+      width: 100%;
+      z-index: -1;
+    }
+  }
+}

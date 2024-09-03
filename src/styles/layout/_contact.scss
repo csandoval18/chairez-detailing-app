@@ -33,6 +33,7 @@
     label,
     input {
       display: block;
+      color: $background;
     }
 
     label {
@@ -47,7 +48,7 @@
       border: 1px solid #aeb2b7;
       border-radius: 5px;
       color: $b;
-      font-size: 1.2rem;
+      font-size: 1rem;
       padding: 0.8rem 0.5rem;
       outline: none;
     }

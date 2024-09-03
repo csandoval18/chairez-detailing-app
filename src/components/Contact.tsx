@@ -26,7 +26,7 @@ const page: React.FC<pageProps> = () => {
             <textarea name="message" id="message" rows={10} />
           </div>
           <button type="submit" className="btn btn-primary">
-            SEND
+          Send
           </button>
         </form>
       </div>

@@ -97,9 +97,14 @@
     .icon {
       margin-bottom: 20px;
     }
+    
+    h4 {
+      font-size: 32px;
+    }
 
     .description {
       display: none;
+      font-size: 14px;
     }
   }
 
@@ -164,9 +169,15 @@
       color: $b;
       padding: 4rem 1rem;
       width: calc(100% - 2rem);
+      
+      h2 {
+        font-size: 48px;
+      }
 
       p {
-        line-height: 1.8rem;
+        color: $b;
+        line-height: 2.5rem;
+        font-size: 18px;
       }
 
       @media (min-width: $mobileL) {
