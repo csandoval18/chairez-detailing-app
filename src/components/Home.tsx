@@ -2,7 +2,7 @@ import React from "react"
 import { MdCleaningServices } from "react-icons/md"
 import { BsRulers } from "react-icons/bs"
 import { GiEyeTarget } from "react-icons/gi"
-import detailMin from "../../public/detail-min.webp"
+import detailMin from "/detail-min.webp"
 import Hero from "./Hero"
 
 interface HomeProps {}
