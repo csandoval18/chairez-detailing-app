@@ -69,6 +69,7 @@
 
 @media (min-width: $laptop) {
   .Footer .top-footer {
+    align-items: start;
     display: flex;
     flex-direction: row;
     gap: 3rem;
@@ -80,6 +81,10 @@
       margin-top: 10px;
       margin-bottom: 20px;
       justify-content: start;
+
+      p {
+        font-size: 14px;
+      }
     }
   }
 }
