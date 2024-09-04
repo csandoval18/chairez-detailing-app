@@ -26,10 +26,6 @@ const page: React.FC<pageProps> = () => {
     return () => {}
   }, [])
   
-  const toggleTheme = () => {
-    setTheme(prevTheme => (prevTheme === 'light' ? 'dark' : 'light'));
-  };
-
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
     setLoading(true)
