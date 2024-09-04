@@ -6,7 +6,6 @@ import ClipLoader from "react-spinners/ClipLoader"
 interface pageProps {}
 
 const page: React.FC<pageProps> = () => {
-  const [theme, setTheme] = useState("light")
   const [firstName, setFirstName] = useState("")
   const [lastName, setLastName] = useState("")
   const [email, setEmail] = useState("")
