@@ -15,7 +15,6 @@ const page: React.FC<pageProps> = () => {
   const [loading, setLoading] = useState(false)
 
   useEffect(() => {
-    document.documentElement.setAttribute('data-theme', theme);
     const initializeEmailJS = () => {
       const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY
       emailjs.init(publicKey)
