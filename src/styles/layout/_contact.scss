@@ -1,4 +1,10 @@
 .Contact {
+  .container {
+    align-items: center;
+   display: flex; 
+   flex-direction: column;
+  }
+  
   form {
     background-color: rgb(var(--w));
     border-radius: 15px;
@@ -9,6 +15,7 @@
     gap: 1rem;
     margin: 6rem 0;
     padding: 2rem 1.5rem;
+    max-width: 943px;
     width: calc(100% - 3rem);
 
     .block {
