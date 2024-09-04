@@ -1,8 +1,9 @@
 .Contact {
   form {
-    background-color: $w;
+    background-color: rgb(var(--w));
     border-radius: 15px;
-    color: $b;
+    box-shadow: rgb(var(--grey)) 2px 4px 22px -12px;
+    color: rgb(var(--b));
     display: flex;
     flex-direction: column;
     gap: 1rem;
@@ -33,7 +34,7 @@
     label,
     input {
       display: block;
-      color: $background;
+      color: rgb(var(--b));
     }
 
     label {
@@ -47,7 +48,7 @@
       background-color: transparent;
       border: 1px solid #aeb2b7;
       border-radius: 5px;
-      color: $b;
+      color: rgb(var(--b));
       font-size: 1rem;
       padding: 0.8rem 0.5rem;
       outline: none;
@@ -58,9 +59,14 @@
       padding: 1rem 2.5rem;
     }
   }
+  
+  .icon {
+    font-size: 20px;
+    margin-left: 5px;
+  }
 }
 
 .Contact .hero {
-  background-color: $w;
+  background-color: rgb(var(--w));
   height: 40vh;
 }

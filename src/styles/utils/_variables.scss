@@ -1,27 +1,13 @@
-$bg: rgb(255, 255, 255);
-$foreground: rgb(255, 255, 255);
-$background: rgb(20, 20, 20);
-$primary: #c1d6e9;
-$secondary: #5863f8;
-$contrast: #faa275;
-$b: rgb(0, 0, 0);
-$w: rgb(255, 255, 255);
-$hamburgerBarHeight: 3px;
-$grey: rgb(84, 88, 105);
-
-// Theme
-
-:root {
-  overflow-x: clip;
-  scroll-behavior: auto !important;
-  color-scheme: dark light;
-  --bg: $w;
-  --fg: $b;
-  @media (prefers-color-scheme: dark) {
-    --bs: $b;
-    --fg: $w;
-  }
-}
+// $bg: rgb(255, 255, 255);
+// $foreground: rgb(255, 255, 255);
+// $background: rgb(20, 20, 20);
+// $primary: #c1d6e9;
+// $secondary: #5863f8;
+// $contrast: #faa275;
+// $b: rgb(0, 0, 0);
+// $w: rgb(255, 255, 255);
+// $hamburgerBarHeight: 3px;
+// $grey: rgb(84, 88, 105);
 
 $mobile: 320px;
 $mobileM: 375px;
@@ -32,3 +18,28 @@ $laptopM: 1440px;
 $desktop: 1920px;
 $desktopM: 2560px;
 $desktopL: 3840px;
+$hamburgerBarHeight: 3px;
+
+
+:root {
+  --foreground: #141414;
+  --background: #ffffff;
+  --primary: #c1d6e9;
+  --secondary: #5863f8;
+  --contrast: #faa275;
+  --b: 0,0,0;
+  --w: 255, 255, 255;
+  --hamburgerBarHeight: 3px;
+  --grey: 84, 88, 105;
+}
+
+[data-theme='dark'] {
+  --foreground: #ffffff;
+  --background: #141414;
+  --primary: #c1d6e9;
+  --secondary: #5863f8;
+  --contrast: #faa275;
+  --b: 0,0,0;
+  --w: 255, 255, 255;
+  --grey: #545869;
+}

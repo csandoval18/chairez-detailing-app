@@ -1,6 +1,5 @@
 .Footer {
-  background-color: $b;
-  color: $w;
+  background-color: rgb(var(--b));
   display: flex;
   flex-direction: column;
 
@@ -12,10 +11,11 @@
     padding: 3rem 0;
 
     a {
+      color: rgb(var(--w));
       transition: color 0.3s ease-in-out;
 
       &:hover {
-        color: $secondary;
+        color: var(--secondary);
       }
     }
 
@@ -34,6 +34,7 @@
       margin-bottom: 20px;
 
       p {
+        color: rgb(var(--w));
         text-align: center;
       }
     }
@@ -47,6 +48,7 @@
 
 .Footer .block {
   h5 {
+    color: rgb(var(--w));
     text-align: center;
   }
 
@@ -57,12 +59,12 @@
   }
 
   svg {
-    color: $primary;
+    color: var(--primary);
     font-size: 2rem;
     transition: color 0.3s ease-in-out;
 
     &:hover {
-      color: $secondary;
+      color: var(--secondary);
     }
   }
 }

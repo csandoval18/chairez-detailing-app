@@ -1,13 +1,15 @@
-import React, { useEffect, useState } from "react"
 import emailjs from "emailjs-com"
-import ClipLoader from "react-spinners/ClipLoader"
+import React, { useEffect, useState } from "react"
 import { IoIosSend } from "react-icons/io"
+import ClipLoader from "react-spinners/ClipLoader"
 
 interface pageProps {}
 
 const page: React.FC<pageProps> = () => {
-  const [name, setName] = useState("")
+  const [firstName, setFirstName] = useState("")
+  const [lastName, setLastName] = useState("")
   const [email, setEmail] = useState("")
+  const [phone, setPhone] = useState("")
   const [message, setMessage] = useState("")
   const [status, setStatus] = useState("")
   const [loading, setLoading] = useState(false)
@@ -31,8 +33,10 @@ const page: React.FC<pageProps> = () => {
     const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY
 
     const templateParams = {
-      name: name,
+      firstName: firstName,
+      lastName: lastName,
       email: email,
+      phone: phone,
       message: message,
     }
 
@@ -40,8 +44,10 @@ const page: React.FC<pageProps> = () => {
       (res) => {
         console.log("EMAIL SENT SUCCESSFULLY!", res.status, res.text)
         setStatus("SUCCESS")
-        setName("")
+        setFirstName("")
+        setLastName("")
         setEmail("")
+        setPhone("")
         setMessage("")
         setLoading(false)
       },
@@ -57,36 +63,56 @@ const page: React.FC<pageProps> = () => {
     <section className="Contact interior">
       <div className="container">
         <h1 className="h-underline">Contact Us</h1>
-        <form action="post">
+        <form action="post" onSubmit={handleSubmit}>
           <div className="block">
-            <label htmlFor="firstname">FIRST NAME</label>
-            <input type="text" name="firtname" id="firstname" />
-            <label htmlFor="lastname">LAST NAME</label>
-            <input type="text" name="lastname" id="lastname" />
+            <label htmlFor="firstName">FIRST NAME</label>
+            <input
+              type="text"
+              name="firtName"
+              id="firstname"
+              onChange={(e) => setFirstName(e.target.value)}
+            />
+            <label htmlFor="lastName">LAST NAME</label>
+            <input
+              type="text"
+              name="lastName"
+              id="lastname"
+              onChange={(e) => setLastName(e.target.value)}
+            />
           </div>
 
           <div className="block">
             <label htmlFor="email">EMAIL</label>
-            <input type="text" name="email" id="email" />
+            <input
+              type="text"
+              name="email"
+              id="email"
+              onChange={(e) => setEmail(e.target.value)}
+            />
             <label htmlFor="phone">PHONE</label>
-            <input type="text" name="phone" id="phone" />
+            <input
+              type="text"
+              name="phone"
+              id="phone"
+              onChange={(e) => setPhone(e.target.value)}
+            />
           </div>
           <div className="block textarea-wrapper">
             <label htmlFor="message">MESSAGE</label>
-            <textarea name="message" id="message" rows={10} />
+            <textarea
+              name="message"
+              id="message"
+              rows={10}
+              onChange={(e) => setMessage(e.target.value)}
+            />
           </div>
-          <button
-            type="submit"
-            className="btn btn-primary"
-            onClick={() => handleSubmit}
-            disabled={loading}
-          >
+          <button type="submit" className="btn btn-primary" disabled={loading}>
             {loading ? (
               <ClipLoader color="#ffffff" size={20} />
             ) : (
               <>
                 Send
-                <IoIosSend />
+                <IoIosSend className="icon" />
               </>
             )}
           </button>

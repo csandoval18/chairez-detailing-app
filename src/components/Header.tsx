@@ -30,7 +30,7 @@ const Header: React.FC<HeaderProps> = () => {
             <Link
               smooth={true}
               to="Services"
-              offset={-55}
+              offset={-120}
               onClick={() => setOpenMenu(false)}
             >
               Services
@@ -40,7 +40,7 @@ const Header: React.FC<HeaderProps> = () => {
             <Link
               smooth={true}
               to="Locations"
-              offset={-55}
+              offset={-120}
               onClick={() => setOpenMenu(false)}
             >
               Locations
@@ -50,7 +50,7 @@ const Header: React.FC<HeaderProps> = () => {
             <Link
               smooth={true}
               to="About"
-              offset={-55}
+              offset={-120}
               onClick={() => setOpenMenu(false)}
             >
               About
@@ -60,7 +60,7 @@ const Header: React.FC<HeaderProps> = () => {
             <Link
               smooth={true}
               to="Contact"
-              offset={-55}
+              offset={-120}
               onClick={() => setOpenMenu(false)}
             >
               Contact

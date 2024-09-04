@@ -30,7 +30,7 @@ a {
   transition: color 0.3s ease-in-out;
 
   &:hover {
-    color: $secondary;
+    color: var(--secondary);
   }
 }
 
@@ -75,7 +75,7 @@ h5 {
 }
 
 .logo {
-  color: $w;
+  color: var(--w);
   cursor: pointer;
   scale: 1;
   transition: scale 0.4s ease-in-out;
@@ -85,7 +85,7 @@ h5 {
   font-size: 1.2rem;
 
   .logo-icon {
-    color: $w;
+    color: var(--w);
     font-size: 32px;
   }
 
@@ -101,7 +101,7 @@ h5 {
 
   &::after {
     content: "";
-    background-color: $primary;
+    background-color: var(--primary);
     border-radius: 12px;
     display: block;
     height: 4px;
@@ -113,7 +113,7 @@ h5 {
 .underline {
   &::after {
     content: "";
-    background-color: $secondary;
+    background-color: var(--secondary);
     border-radius: 12px;
     display: block;
     height: 4px;
@@ -164,7 +164,7 @@ h5 {
 .Home .container {
   padding: 1.5rem;
 
-  @media (min-width: $mobileL) {
+  @media (min-width: $tablet) {
     padding: 6rem 4rem;
   }
 
@@ -182,7 +182,7 @@ h5 {
 }
 
 .interior .hero {
-  background-color: $w;
+  background-color: var(--w);
   background-image: url(/detail-2-min.webp);
   background-position: center;
   background-repeat: no-repeat;

@@ -186,7 +186,7 @@ span,
 li,
 ul {
   font-family: "Samsung Sharp Sans Regular";
-  color: $foreground;
+  color: var(--foreground);
 }
 
 p {

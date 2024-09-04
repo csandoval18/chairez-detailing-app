@@ -1,10 +1,10 @@
 .About {
   h1 {
-    margin-bottom: 4rem;
+    margin-bottom: 4rem !important;
   }
 
   .block {
-    margin-bottom: 4rem;
+    margin-bottom: 3rem;
 
     h3 {
       text-align: center;
@@ -15,6 +15,18 @@
       font-size: 16px;
       line-height: 2.2rem;
       text-align: left;
+    }
+  }
+  
+  @media (min-width: $desktop) {
+    .container {
+    padding: 6rem 36rem;
+    }
+  }
+  
+  @media (min-width: 1922px) {
+    .container {
+      padding: 6rem 55rem !important;
     }
   }
 }

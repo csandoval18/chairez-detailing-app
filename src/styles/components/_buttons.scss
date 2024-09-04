@@ -1,4 +1,5 @@
 .btn {
+  cursor: pointer;
   display: block;
   font-size: 1.2rem !important;
   padding: 2rem 3rem;
@@ -11,14 +12,14 @@
   background-color: transparent;
   border: none;
   box-shadow: 1px 1px 5px -4px rgb(0, 0, 0);
-  color: $w !important;
+  color: rgb(var(--w)) !important;
   font-size: 1.2rem !important;
   position: relative;
   transition: 0.2s ease-in color;
   z-index: 1;
 
   &::before {
-    background-color: $secondary;
+    background-color: var(--secondary);
     content: "";
     height: 100%;
     width: 100%;
@@ -29,7 +30,7 @@
   }
 
   &::after {
-    background-color: $primary;
+    background-color: var(--primary);
     content: "";
     display: block;
     height: 100%;
@@ -42,7 +43,7 @@
   }
 
   &:hover {
-    color: $b !important;
+    color: rgb(var(--b)) !important;
 
     &::after {
       width: 100%;

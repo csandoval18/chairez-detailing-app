@@ -19,8 +19,8 @@
 
   .overlay {
     align-items: center;
-    background-color: rgba($b, 0.6);
-    color: $w;
+    background-color: rgba(var(--b), 0.6);
+    color: rgb(var(--w));
     display: flex;
     flex-direction: column;
     padding: 2rem;
@@ -31,13 +31,13 @@
 
   h1 {
     align-items: center;
-    color: $w;
+    color: rgb(var(--w));
     display: flex;
     flex-direction: column;
     margin-bottom: 15px;
 
     &:after {
-      background-color: $primary;
+      background-color: var(--primary);
       border-radius: 12px;
       content: "";
       display: block;
@@ -54,6 +54,7 @@
   }
 
   p {
+    color: rgb(var(--w));
     font-size: 22px;
     margin-bottom: 30px;
   }
@@ -85,11 +86,12 @@
 }
 
 .home-services {
-  color: var(--fg);
+  color: var(--foreground);
   padding: 2rem 0;
   text-align: center;
 
   h2 {
+    color: var(--foreground);
     padding: 4rem 0 3rem;
     margin: 0;
   }
@@ -134,7 +136,7 @@
   }
 
   .box {
-    border: 2px solid rgba($grey, 0.3);
+    border: 2px solid rgba(var(--grey), 0.3);
     border-radius: 16px;
     padding: 1.5rem;
     transition: box-shadow 0.2s ease-in-out;
@@ -147,13 +149,13 @@
       cursor: pointer;
 
       .icon {
-        color: $secondary;
+        color: var(--secondary);
       }
     }
   }
 
   .icon {
-    color: $primary;
+    color: var(--primary);
     font-size: 82px;
     padding-top: 28px;
     transition: color 0.2s ease-in-out;
@@ -167,8 +169,8 @@
     flex-direction: column;
 
     .left-block {
-      background-color: $primary;
-      color: $b;
+      background-color: var(--primary);
+      color: rgb(var(--b));
       padding: 4rem 1rem;
       width: calc(100% - 2rem);
 
@@ -177,7 +179,7 @@
       }
 
       p {
-        color: $b;
+        color: rgb(var(--b));
         line-height: 2.5rem;
         font-size: 16px;
       }
@@ -185,6 +187,12 @@
       @media (min-width: $mobileL) {
         padding: 6rem 3rem;
         width: calc(100% - 6rem);
+      }
+      
+      @media (min-width: 1922px) {
+        p {
+          margin-top: 5rem;
+        }
       }
     }
 
@@ -211,7 +219,7 @@
         width: 50%;
 
         &::after {
-          background-color: rgba($primary, 0.169);
+          background-color: rgba(#c1d6e9, 0.169);
           clip-path: polygon(100% 0, 100% 100%, 0 100%);
           content: "";
           height: 50%;
