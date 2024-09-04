@@ -20,26 +20,25 @@ $desktopM: 2560px;
 $desktopL: 3840px;
 $hamburgerBarHeight: 3px;
 
-
 :root {
   --foreground: #141414;
   --background: #ffffff;
   --primary: #c1d6e9;
   --secondary: #5863f8;
   --contrast: #faa275;
-  --b: 0,0,0;
+  --b: 0, 0, 0;
   --w: 255, 255, 255;
   --hamburgerBarHeight: 3px;
   --grey: 84, 88, 105;
 }
 
-[data-theme='dark'] {
+[data-theme="dark"] {
   --foreground: #ffffff;
   --background: #141414;
   --primary: #c1d6e9;
   --secondary: #5863f8;
   --contrast: #faa275;
-  --b: 0,0,0;
+  --b: 0, 0, 0;
   --w: 255, 255, 255;
-  --grey: #545869;
+  --grey: 84, 88, 105;
 }

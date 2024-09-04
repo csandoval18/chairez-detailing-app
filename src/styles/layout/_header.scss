@@ -1,7 +1,5 @@
 .navbar {
   align-items: center;
-  // background-color: rgba($b, 0.2);
-  // backdrop-filter: blur(30px);
   background-color: rgb(var(--b));
   display: flex;
   height: 5rem;
@@ -13,10 +11,6 @@
 
   .logo {
     caret-color: transparent;
-    
-    &.open {
-      z-index: 1000;
-    }
   }
 
   &.container {
@@ -26,6 +20,25 @@
     @media (min-width: $mobileL) {
       padding-right: 5rem;
       padding-left: 5rem;
+    }
+  }
+}
+
+.menu {
+  align-items: center;
+  display: flex;
+  gap: 2rem;
+  height: 100%;
+  
+  .navMenu .mobile-drawer-settings {
+    display: none;
+    
+    &.open {
+      align-items: center;
+      display: flex;
+      height: 80px;
+      justify-content: start;
+      padding: 0 4rem;
     }
   }
 }
@@ -53,7 +66,7 @@
   left: -100%;
   list-style: none;
   margin: 0;
-  padding: 5rem 0;
+  padding: 0;
   position: fixed;
   transition: left 0.4s ease-in-out;
   top: 0;
@@ -89,7 +102,7 @@
   
   &.open {
     a { 
-      color: rgb(var(--b)) !important;
+      color: var(--foreground) !important;
     }
   }
 }

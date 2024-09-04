@@ -1,11 +1,8 @@
 .btn {
   cursor: pointer;
   display: block;
-  font-size: 1.2rem !important;
-  padding: 2rem 3rem;
   transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
   text-decoration: none;
-  width: fit-content;
 }
 
 .btn-primary {
@@ -14,9 +11,11 @@
   box-shadow: 1px 1px 5px -4px rgb(0, 0, 0);
   color: rgb(var(--w)) !important;
   font-size: 1.2rem !important;
+  padding: 2rem 3rem;
   position: relative;
   transition: 0.2s ease-in color;
   z-index: 1;
+  width: fit-content;
 
   &::before {
     background-color: var(--secondary);
@@ -49,5 +48,22 @@
       width: 100%;
       z-index: -1;
     }
+  }
+}
+
+.btn-theme-toggle {
+  align-items: center;
+  background-color: var(--primary);
+  border-radius: 50%;
+  border: none;
+  display: flex;
+  font-size: 30px;
+  justify-content: center;
+  height: 40px;
+  padding: 0 !important;
+  width: 40px;
+  
+  &:hover {
+    background-color: var(--secondary);
   }
 }

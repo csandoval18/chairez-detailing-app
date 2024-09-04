@@ -85,6 +85,78 @@
   }
 }
 
+.home-intro {
+  .layout {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+
+    .left-block {
+      background-color: var(--primary);
+      color: rgb(var(--b));
+      padding: 4rem 1rem;
+      width: calc(100% - 2rem);
+
+      h2 {
+        font-size: 48px;
+      }
+
+      p {
+        color: rgb(var(--b));
+        line-height: 2.5rem;
+        font-size: 16px;
+      }
+
+      @media (min-width: $mobileL) {
+        padding: 6rem 3rem;
+        width: calc(100% - 6rem);
+      }
+      
+      @media (min-width: 1922px) {
+        p {
+          margin-top: 5rem;
+        }
+      }
+    }
+
+    .right-block {
+      position: relative;
+      width: 100%;
+
+      img {
+        height: 100%;
+        object-fit: cover;
+        width: 100%;
+      }
+    }
+
+    @media (min-width: $laptopM) {
+      flex-direction: row;
+
+      .left-block {
+        padding: 6rem 8rem;
+        width: calc(50% - 16rem);
+      }
+
+      .right-block {
+        width: 50%;
+
+        &::after {
+          background-color: rgba(#c1d6e9, 0.169);
+          clip-path: polygon(100% 0, 100% 100%, 0 100%);
+          content: "";
+          height: 50%;
+          bottom: 0;
+          left: 0;
+          position: absolute;
+          width: 100%;
+          z-index: 100;
+        }
+      }
+    }
+  }
+}
+
 .home-services {
   color: var(--foreground);
   padding: 2rem 0;
@@ -159,77 +231,5 @@
     font-size: 82px;
     padding-top: 28px;
     transition: color 0.2s ease-in-out;
-  }
-}
-
-.home-intro {
-  .layout {
-    display: flex;
-    flex: 1;
-    flex-direction: column;
-
-    .left-block {
-      background-color: var(--primary);
-      color: rgb(var(--b));
-      padding: 4rem 1rem;
-      width: calc(100% - 2rem);
-
-      h2 {
-        font-size: 48px;
-      }
-
-      p {
-        color: rgb(var(--b));
-        line-height: 2.5rem;
-        font-size: 16px;
-      }
-
-      @media (min-width: $mobileL) {
-        padding: 6rem 3rem;
-        width: calc(100% - 6rem);
-      }
-      
-      @media (min-width: 1922px) {
-        p {
-          margin-top: 5rem;
-        }
-      }
-    }
-
-    .right-block {
-      position: relative;
-      width: 100%;
-
-      img {
-        height: 100%;
-        object-fit: cover;
-        width: 100%;
-      }
-    }
-
-    @media (min-width: $laptopM) {
-      flex-direction: row;
-
-      .left-block {
-        padding: 6rem 8rem;
-        width: calc(50% - 16rem);
-      }
-
-      .right-block {
-        width: 50%;
-
-        &::after {
-          background-color: rgba(#c1d6e9, 0.169);
-          clip-path: polygon(100% 0, 100% 100%, 0 100%);
-          content: "";
-          height: 50%;
-          bottom: 0;
-          left: 0;
-          position: absolute;
-          width: 100%;
-          z-index: 100;
-        }
-      }
-    }
   }
 }

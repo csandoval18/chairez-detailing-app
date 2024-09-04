@@ -6,6 +6,7 @@ import ClipLoader from "react-spinners/ClipLoader"
 interface pageProps {}
 
 const page: React.FC<pageProps> = () => {
+  const [theme, setTheme] = useState("light")
   const [firstName, setFirstName] = useState("")
   const [lastName, setLastName] = useState("")
   const [email, setEmail] = useState("")
@@ -15,14 +16,19 @@ const page: React.FC<pageProps> = () => {
   const [loading, setLoading] = useState(false)
 
   useEffect(() => {
+    document.documentElement.setAttribute('data-theme', theme);
     const initializeEmailJS = () => {
       const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY
       emailjs.init(publicKey)
     }
-
+    
     initializeEmailJS()
     return () => {}
   }, [])
+  
+  const toggleTheme = () => {
+    setTheme(prevTheme => (prevTheme === 'light' ? 'dark' : 'light'));
+  };
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
@@ -106,22 +112,28 @@ const page: React.FC<pageProps> = () => {
               onChange={(e) => setMessage(e.target.value)}
             />
           </div>
-          <button type="submit" className="btn btn-primary" disabled={loading}>
-            {loading ? (
-              <ClipLoader color="#ffffff" size={20} />
-            ) : (
-              <>
-                Send
-                <IoIosSend className="icon" />
-              </>
+          <div className="send-wrapper">
+            <button
+              type="submit"
+              className="btn btn-primary"
+              disabled={loading}
+            >
+              {loading ? (
+                <ClipLoader color="#ffffff" size={20} />
+              ) : (
+                <>
+                  Send
+                  <IoIosSend className="icon" />
+                </>
+              )}
+            </button>
+            {status === "SUCCESS" && (
+              <p className="success">Message sent successfully!</p>
             )}
-          </button>
-          {status === "SUCCESS" && (
-            <p className="success">Message sent successfully!</p>
-          )}
-          {status === "FAILED" && (
-            <p className="error">Failed to send message. Please try again.</p>
-          )}
+            {status === "FAILED" && (
+              <p className="error">Failed to send message. Please try again.</p>
+            )}
+          </div>
         </form>
       </div>
     </section>
