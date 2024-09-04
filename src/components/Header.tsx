@@ -10,12 +10,17 @@ const Header: React.FC<HeaderProps> = () => {
     <header className="navbar container">
       <Link
         href="/"
-        className="logo"
+        className={openMenu ? "logo" + " " + "open" : "logo"}
         smooth={true}
         to="Hero"
         onClick={() => setOpenMenu(false)}
       >
-        <img src="/logo-w.webp" alt="" width={100} height={60}></img>
+        <img
+          src={openMenu ? "/logo.webp" : "/logo-w.webp"}
+          alt="header-logo"
+          width={100}
+          height={60}
+        ></img>
       </Link>
       <div
         onClick={() => {
@@ -25,7 +30,7 @@ const Header: React.FC<HeaderProps> = () => {
           openMenu ? "navMenuWrapper" + " " + "open" : "navMenuWrapper"
         }
       >
-        <ul className="navMenu">
+        <ul className={openMenu ? "navMenu" + " " + "open" : "navMenu"}>
           <li>
             <Link
               smooth={true}

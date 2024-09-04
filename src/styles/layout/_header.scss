@@ -13,6 +13,10 @@
 
   .logo {
     caret-color: transparent;
+    
+    &.open {
+      z-index: 1000;
+    }
   }
 
   &.container {
@@ -82,6 +86,12 @@
       color: rgb(var(--b)) !important;
     }
   }
+  
+  &.open {
+    a { 
+      color: rgb(var(--b)) !important;
+    }
+  }
 }
 
 .hamburgerBtn {
@@ -96,12 +106,12 @@
       background-color: transparent;
 
       &::before {
-        background-color: rgb(var(--w));
+        background-color: var(--foreground);
         transform: rotate(45deg);
       }
 
       &::after {
-        background-color: rgb(var(--w));
+        background-color: var(--foreground);
         transform: rotate(-45deg);
       }
     }
