@@ -81,6 +81,7 @@
     border-top: 1px solid rgba(var(--grey), 0.5);
   }
 
+  
   a {
     border-bottom: 1px solid rgba(var(--grey), 0.5);
     color: rgb(var(--w)) !important;
@@ -101,6 +102,10 @@
   }
   
   &.open {
+    li:first-of-type a {
+      border-top: 1px solid rgba(var(--grey), 0.5);
+    }
+    
     a { 
       color: var(--foreground) !important;
     }
